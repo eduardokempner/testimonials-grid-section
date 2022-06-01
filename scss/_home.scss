@@ -1,0 +1,121 @@
+body {
+    margin-top: 200px;
+    background: #ECF2F8;
+}
+
+.testimonial {
+    background-color: $white;
+    padding: 2.6rem 3.2rem 3.2rem 3.2rem;
+    border-radius: 0.8rem;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+
+    .testimonial__profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+        .testimonial__avatar {
+            max-width: 28px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .testimonial__name {
+            color: $dark-grey;
+            font-weight: 500;
+            font-size: 1.3rem;
+            line-height: 1.3rem;
+            span {
+                display: block;
+                margin-top: 0.4rem;
+                opacity: 0.5;
+                font-weight: 500;
+                font-size: 11px;
+                line-height: 11px;
+            }
+        }
+    }
+
+    .testimonial__title {
+        color: $dark-grey;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+
+    .testimonial__quote {
+        color: $dark-grey;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 18px;
+        opacity: 0.7;
+    }
+
+    &--purple {
+        background-color: #733FC8;
+        background-image: url(/img/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position-x: 82%;
+
+        .testimonial__profile {
+            .testimonial__avatar {
+                outline: 2px solid #A775F1;
+            }
+
+            .testimonial__name {
+                color: $white;
+            }
+        }
+
+        .testimonial__title {
+            color: $white;
+        }
+
+        .testimonial__quote {
+            color: #CFCFCF;
+            opacity: 0.7;
+        }
+    }
+
+    &--grey {
+        background-color: #48556A;
+
+        .testimonial__profile {
+            .testimonial__name {
+                color: $white;
+            }
+        }
+
+        .testimonial__title {
+            color: $white;
+        }
+
+        .testimonial__quote {
+            color: $white;
+            opacity: 0.7;
+        }
+    }
+
+    &--black {
+        background-color: #19202D;
+
+        .testimonial__profile {
+            .testimonial__avatar {
+                outline: 2px solid #A775F1;
+            }
+            .testimonial__name {
+                color: $white;
+            }
+        }
+
+        .testimonial__title {
+            color: #ECF2F8;
+        }
+
+        .testimonial__quote {
+            color: $white;
+            opacity: 0.7;
+        }
+    }
+
+}
