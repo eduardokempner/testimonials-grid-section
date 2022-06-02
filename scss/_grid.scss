@@ -5,11 +5,10 @@
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: minmax(282px, auto) minmax(266px, auto);
     grid-template-areas: 
     "daniel daniel jonathan kira"
     "jeanette patrick patrick kira";
-    align-items: start;
+    align-items: stretch;
 }
 
 .daniel {
@@ -30,4 +29,37 @@
 
 .patrick {
     grid-area: patrick;
+}
+
+@include responsive(991px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "daniel daniel jonathan"
+        "jeanette patrick patrick"
+        "kira kira kira";
+    }
+}
+
+@include responsive(768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "daniel jonathan"
+        "jeanette patrick"
+        "kira kira";
+    }
+}
+
+@include responsive(600px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "daniel"
+        "jonathan"
+        "jeanette"
+        "patrick"
+        "kira";
+        align-items: start;
+    }
 }

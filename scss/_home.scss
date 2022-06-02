@@ -1,5 +1,5 @@
 body {
-    margin-top: 200px;
+    margin-top: 164px;
     background: #ECF2F8;
 }
 
@@ -118,4 +118,18 @@ body {
         }
     }
 
+}
+
+@include responsive(991px) {
+    body {
+        margin-top: 104px;
+        margin-bottom: 104px;
+    }
+}
+
+@include responsive(600px) {
+    body {
+        margin-top: 71px;
+        margin-bottom: 71px;
+    }
 }
